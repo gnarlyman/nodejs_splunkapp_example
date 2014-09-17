@@ -1,4 +1,4 @@
-# SplunkTie - NodeJS integration with Splunk
+# SplunkTie: nodejs integration with Splunk
 
 An example of how to build a nodejs webserver with express.js and integrate with a Splunk instance.
 -------
@@ -7,7 +7,7 @@ An example of how to build a nodejs webserver with express.js and integrate with
 
 * nodejs server with express.js
 * forms based authentication to Splunk instance
-* fully functionaly index page with graphs, charts, and a map
+* fully functional index page with graphs, charts, and a map
 
 -------
 
