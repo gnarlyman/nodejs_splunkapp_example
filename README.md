@@ -22,4 +22,5 @@
 
 * clone this project to a folder
 * edit settings for your environment
+* install depedancies: npm install
 * start the nodejs server: npm start
