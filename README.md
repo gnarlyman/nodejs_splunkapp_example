@@ -14,7 +14,7 @@
 ### Prerequisites to use this nodejs package:
 
 * nodejs must be installed
-* A Splunk instance must be available
+* A Splunk 6.x (or greater) instance must be available
 
 -------
 
