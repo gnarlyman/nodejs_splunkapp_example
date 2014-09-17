@@ -5,8 +5,8 @@ require.config({
 splunkjs.config({
     proxyPath: '/proxy',
     scheme: 'https',
-    host: 'localhost',
-    port: 8089,
+    host: config.splunkHost,
+    port: config.splunkRESTPort,
 
     authenticate: function(done) {
         require([

@@ -4,6 +4,7 @@ var app = require('../app');
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
+var config = require('../config.json')
 
 var key_file = 'ssl/server.key';
 var cert_file = 'ssl/server.crt';
@@ -12,6 +13,9 @@ var options = {
     cert : fs.readFileSync(cert_file)
 };
 
-// Can listen on both
-//http.createServer(app).listen(3001); // HTTP
-https.createServer(options, app).listen(3000); // HTTPS
+if (config.httpEnabled) {
+    http.createServer(app).listen(config.httpListenPort); // HTTP
+}
+if (config.httpsEnabled) {
+    https.createServer(options, app).listen(config.httpsListenPort); // HTTPS
+}

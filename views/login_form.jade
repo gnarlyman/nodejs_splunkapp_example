@@ -17,6 +17,7 @@ block content
         button(type='submit',class='btn default',onclick='onLogin()') Log in
         br
         div(id='errorText')
-
+        script.
+            var config = !{config}
         script(src='static/splunkjs/config.js')
         script(src='static/javascripts/splunklogin.js')

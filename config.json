@@ -1,0 +1,8 @@
+{
+    "httpsEnabled" : true,
+    "httpsListenPort" : 3000,
+    "httpEnabled" : false,
+    "httpListenPort" : 3001,
+    "splunkHost" : "localhost",
+    "splunkRESTPort" : 8089
+}

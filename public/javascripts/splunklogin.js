@@ -34,8 +34,8 @@ function onLogin() {
             username: username,
             password: password,
             scheme: "https",
-            host: "localhost", 
-            port: 8089,
+            host: config.splunkHost, 
+            port: config.splunkRESTPort,
         });
     
         // Log in to Splunk
