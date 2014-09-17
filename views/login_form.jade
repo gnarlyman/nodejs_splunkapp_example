@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div(class='main-area')
+        h2 Login Form
+        p   This page tests login and authentication. When you enter a 
+            |name and password, these credentials are used to log in
+            |to Splunk.
+        p   If login is successful, a session key is returned and stored 
+            |in a cookie, along with the username. Then, you are redirected 
+            |to another page that uses the same session key.
+        p  <b>Username:</b>
+        input(id='usernamebox',type='text')
+        p  <b>Password:</b>
+        input(id='pwbox',type='password')
+        br
+        button(type='submit',class='btn default',onclick='onLogin()') Log in
+        br
+        div(id='errorText')
+
+        script(src='static/splunkjs/config.js')
+        script(src='static/javascripts/splunklogin.js')

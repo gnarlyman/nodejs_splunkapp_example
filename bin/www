@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+var debug = require('debug')('splunkTie');
+var app = require('../app');
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
+
+var key_file = 'ssl/server.key';
+var cert_file = 'ssl/server.crt';
+var options = {
+    key : fs.readFileSync(key_file),
+    cert : fs.readFileSync(cert_file)
+};
+
+// Can listen on both
+//http.createServer(app).listen(3001); // HTTP
+https.createServer(options, app).listen(3000); // HTTPS

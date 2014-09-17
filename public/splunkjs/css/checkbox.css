@@ -1,0 +1,29 @@
+.splunk-checkboxgroup {
+    width: 220px;
+}
+
+.splunk-checkboxgroup .choice label, .splunk-checkbox .choice label {
+        display: inline-block;
+        margin-left: 0.4em;        
+}
+
+.shared-controls-syntheticcheckboxcontrol a.btn {
+    position: absolute;
+    left: 0;
+}
+.shared-controls-syntheticcheckboxcontrol label {
+    padding: 0 0 0 21px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    margin: 5px 0;
+}
+.shared-controls-syntheticcheckboxcontrol label:first-child {
+    padding-top: 0;
+}
+.shared-controls-syntheticcheckboxcontrol label:last-child {
+    padding-bottom: 0;
+}
+
+.splunk-checkboxgroup-choices {
+    margin-bottom: 8px;
+}

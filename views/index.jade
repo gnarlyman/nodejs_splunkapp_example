@@ -1,0 +1,41 @@
+extends layout
+
+block content
+    div(class='dashboard-body container-fluid main-section-body',data-role='main')
+        
+        div(class='row')
+            div(class='dashboard-header')
+                h1= title
+                p Welcome to #{title}
+
+        div(class='dashboard-row')
+            div(class='dashboard-cell',style='width:100%')
+                div(class='dashboard-panel')
+                    div(class='dashboard-element')
+                        div(class='panel-body')
+                            div(id='mymap')
+
+        div(class='dashboard-row')
+            div(class='dashboard-cell',style='width:50%')
+                div(class='dashboard-panel')
+                    div(class='dashboard-element')
+                        div(class='panel-body')
+                            div(id='mychart')
+            div(class='dashboard-cell',style='width:50%')
+                div(class='dashboard-panel')
+                    div(class='dashboard-element')
+                        div(class='panel-body')
+                            div(id='mytable')
+
+        div(class='dashboard-row')
+            div(class='dashboard-cell',style='width:100%')
+                div(class='dashboard-panel')
+                    div(class='dashboard-element')
+                        div(class='panel-body')
+                            div(id='myeventsviewer')
+
+    script(src='/static/splunkjs/config.js')
+    script(src='/static/javascripts/splunktie.js')
+    script(src='/static/javascripts/index.js')
+
+

@@ -1,0 +1,19 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.fail{
+    color:red;
+}
+.main-area {
+    padding:30px;
+}
+
+.splunk-paginator {
+    float: none !important;
+}
