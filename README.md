@@ -22,4 +22,4 @@
 
 * clone this project to a folder
 * edit settings for your environment
-* start the nodejs server: `npm start
+* start the nodejs server: npm start
