@@ -24,3 +24,9 @@
 * edit settings for your environment
 * install depedancies: npm install
 * start the nodejs server: npm start
+
+-------
+### Resources
+* http://dev.splunk.com/view/SP-CAAAEU7##javascriptintegrated
+* http://dev.splunk.com/view/webframework-splunkjsstack/SP-CAAAESV
+* http://docs.splunk.com/Documentation/WebFramework
