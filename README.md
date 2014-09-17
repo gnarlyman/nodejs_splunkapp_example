@@ -22,7 +22,7 @@
 
 * clone this project to a folder
 * edit config.json settings for your environment
-* install depedancies: npm install
+* install dependancies: npm install
 * start the nodejs server: npm start
 
 -------
